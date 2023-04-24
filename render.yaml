@@ -3,7 +3,7 @@ services:
   name: wordpress
   region: singapore
   env: docker
-  plan: standard
+  plan: starter
   autoDeploy: false
   disk:
     name: wordpress
