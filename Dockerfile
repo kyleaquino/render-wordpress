@@ -2,6 +2,7 @@
 # https://hub.docker.com/_/wordpress
 FROM bitnami/wordpress:latest
 
+USER root
 RUN apt-get update && apt-get install -y magic-wormhole
 
 RUN usermod -s /bin/bash www-data
