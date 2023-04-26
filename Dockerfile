@@ -3,7 +3,6 @@
 FROM wordpress:6.2.0-apache
 
 RUN apt-get update && apt-get install -y magic-wormhole nano wget
-RUN cd /tmp && wget https://wordpress.org/latest.tar.gz && tar -xvf latest.tar.gz && cp -R wordpress /var/www/html/
 
 RUN usermod -s /bin/bash www-data
 RUN chown www-data:www-data /var/www
