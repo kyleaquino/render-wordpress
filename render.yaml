@@ -4,7 +4,7 @@ services:
   region: singapore
   env: docker
   plan: starter
-  autoDeploy: false
+  autoDeploy: true
   disk:
     name: wordpress
     mountPath: /var/www/html
