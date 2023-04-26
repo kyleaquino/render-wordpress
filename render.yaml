@@ -5,6 +5,7 @@ services:
   env: docker
   plan: starter
   autoDeploy: false
+  startCommand: ./post-build.sh
   disk:
     name: wordpress
     mountPath: /var/www/html
