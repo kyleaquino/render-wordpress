@@ -8,3 +8,5 @@ RUN apt-get install --no-install-recommends -y tidy csstidy magic-wormhole nano
 RUN usermod -s /bin/bash www-data
 RUN chown www-data:www-data /var/www
 USER www-data:www-data
+
+CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
